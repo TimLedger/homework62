@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import Home from './containers/Home';
+import About from './containers/About';
+import Contacts from './containers/Contacts';
+import Portfolio from './containers/Portfolio';
+import Project1 from './containers/Project1';
+import Project2 from './containers/Project2';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+       <nav>
+        <ul>
+          <li>
+            <NavLink to="/" end>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="about-us" className={({ isActive }) => isActive ? 'active-link' : 'link'}>О нас</NavLink>
+          </li>
+          <li>
+            <NavLink to="contacts" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Контакты</NavLink>
+          </li>
+          <li>
+            <NavLink to="portfolio" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Портфолио</NavLink>
+          </li>
+        </ul>
+      </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/project1" element={<Project1 />} />
+          <Route path="/portfolio/project2" element={<Project2 />} />
+        </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
