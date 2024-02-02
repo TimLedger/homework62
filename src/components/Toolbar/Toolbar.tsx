@@ -11,22 +11,22 @@ const Toolbar: React.FC = () => {
                         <img src="../src/assets/logo.svg" alt="Концепция" />
                     </NavLink>
                     <nav className='main-nav'>
-                        <ul className='main-nav'>
+                        <ul>
                             <li>
-                                <NavLink to="about" className={({ isActive }) => isActive ? 'active-link' : 'link'}>О нас</NavLink>
+                                <NavLink to="/about" className={({ isActive }) => isActive ? 'active-link' : 'link'}>О нас</NavLink>
                             </li>
                             <li>
-                                <NavLink to="contacts" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Контакты</NavLink>
+                                <NavLink to="/contacts" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Контакты</NavLink>
                             </li>
                             <li>
-                                <NavLink to="projects" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Кейсы</NavLink>
+                                <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-link' : 'link'}>Кейсы</NavLink>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-      );
+    );
 }
 
 export default Toolbar;

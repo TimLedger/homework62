@@ -6,13 +6,12 @@ import Contacts from './containers/Contacts';
 import Projects from './containers/Projects';
 import Project1 from './containers/Project1';
 import Project2 from './containers/Project2';
-import Toolbar from './components/Toolbar/Toolbar';
+import NotFound from './containers/NotFound';
 import './App.css'
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Toolbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/project1" element={<Project1 />} />
           <Route path="/projects/project2" element={<Project2 />} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
     </Router>
   );
