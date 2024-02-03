@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NotFound: React.FC = () => {
+  useEffect(() => {
+    document.title = '404 - Страница не найдена';
+  }, []);
   return (
     <div className='not-found'>
       <div className="not-found-frame">
