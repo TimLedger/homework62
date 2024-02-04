@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Toolbar from '../components/Toolbar/Toolbar';
+import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 const Contacts: React.FC = () => {
@@ -8,9 +8,9 @@ const Contacts: React.FC = () => {
   }, []);
   return (
     <div>
-      <Toolbar />
+      <Header />
       <div className="container">
-        
+        контакт
       </div>
       <Footer />
     </div>

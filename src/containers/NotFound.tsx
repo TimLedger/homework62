@@ -9,7 +9,8 @@ const NotFound: React.FC = () => {
     <div className='not-found'>
       <div className="not-found-frame">
         <h1 className='not-found-title'>4О4</h1>
-        <p className='not-found-link'><NavLink className={'logo'} to="/" end>На главную</NavLink>.</p>
+
+        <p className='not-found-link'><NavLink to="/" end>На главную</NavLink></p>
       </div>
     </div>
   );

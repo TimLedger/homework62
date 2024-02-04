@@ -1,16 +1,29 @@
 import React, { useEffect } from 'react';
-import Toolbar from '../components/Toolbar/Toolbar';
+import { useLocation, Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
+import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 const Project1: React.FC = () => {
   useEffect(() => {
-    document.title = 'Контакт';
+    document.title = 'Проект1';
   }, []);
+
+  const location = useLocation();
+  const path = location.pathname;
+  const parts = path.split('/');
+  parts.shift();
+
   return (
     <div>
-      <Toolbar />
+      <Header />
       <div className="container">
-        
+        <ul className='breadcrumb'>
+          <li className='breadcrumb-slash'><Link className='breadcrumb-link' to="/" ><FaHome /></Link></li>
+          <li className='breadcrumb-slash'><Link className='breadcrumb-link' to="/projects">Кейсы</Link></li>
+          <li className='breadcrumb-slash'><span>Проект1</span></li>
+        </ul>
+        проект 1
       </div>
       <Footer />
     </div>

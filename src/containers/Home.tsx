@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Toolbar from '../components/Toolbar/Toolbar';
+import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 const Home: React.FC = () => {
@@ -8,9 +8,9 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div>
-      <Toolbar />
+      <Header />
       <div className="container">
-        
+        г стр
       </div>
       <Footer />
     </div>

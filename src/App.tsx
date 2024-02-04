@@ -6,6 +6,7 @@ import Contacts from './containers/Contacts';
 import Projects from './containers/Projects';
 import Project1 from './containers/Project1';
 import Project2 from './containers/Project2';
+import Project3 from './containers/Project3';
 import NotFound from './containers/NotFound';
 import './App.css'
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/project1" element={<Project1 />} />
           <Route path="/projects/project2" element={<Project2 />} />
+          <Route path="/projects/project3" element={<Project3 />} />
           <Route path="*" element={<NotFound />} /> 
         </Routes>
     </Router>
