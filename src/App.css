@@ -4,6 +4,10 @@
   padding: 0 15px;
 }
 
+h2{
+  font-size: 30px;
+}
+
 .not-found{
   background-color: #fff;
   margin: 0;
@@ -50,6 +54,55 @@
   color: black;
   letter-spacing: 5px;
   transition: 0.3s;
+}
+
+.about-body{
+  min-height: 80vh;
+}
+
+.about-text{
+  max-width: 800px;
+  font-size: 18px;
+}
+
+.contacts-body{
+  min-height: 80vh;
+}
+
+.contacts-text{
+  max-width: 800px;
+  font-size: 18px;
+}
+
+.contacts-cards{
+  margin: 40px 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-card{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 30px;
+  border-radius: 30px;
+  background: #242424;
+  box-shadow: 15px 15px 30px #343434,
+             -15px -15px 30px #141414;
+}
+
+.contacts-icon{
+  font-size: 60px;
+}
+
+.contacts-card h4{
+  font-size: 25px;
 }
 
 .projects-body{
@@ -164,16 +217,16 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 5px 0;
   border-radius: 4px ;
 }

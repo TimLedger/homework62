@@ -13,6 +13,7 @@ const Projects: React.FC = () => {
       <Header />
       <div className="container">
         <div className="projects-body">
+          <h2>Кейсы</h2>
           <ul className='projects-cards'>
             <li><Link className='projects-card' to="/projects/burger"><div className='projects-icon'><FaHamburger /></div> <span>Burger</span></Link></li>
             <li><Link className='projects-card' to="/projects/react-chat"><div className='projects-icon'><FaRegListAlt /></div> <span>React Chat</span></Link></li>
