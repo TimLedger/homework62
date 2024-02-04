@@ -2,11 +2,12 @@ import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
 import Header from '../components/Header/Header';
+import Chat from '../components/Project2/Project2';
 import Footer from '../components/Footer/Footer';
 
 const Project2: React.FC = () => {
   useEffect(() => {
-    document.title = 'Проект2';
+    document.title = 'React Chat';
   }, []);
 
   const location = useLocation();
@@ -21,9 +22,9 @@ const Project2: React.FC = () => {
         <ul className='breadcrumb'>
           <li className='breadcrumb-slash'><Link className='breadcrumb-link' to="/" ><FaHome /></Link></li>
           <li className='breadcrumb-slash'><Link className='breadcrumb-link' to="/projects">Кейсы</Link></li>
-          <li className='breadcrumb-slash'><span>Проект2</span></li>
+          <li className='breadcrumb-slash'><span>React Chat</span></li>
         </ul>
-        проект 2
+        <Chat />
       </div>
       <Footer />
     </div>

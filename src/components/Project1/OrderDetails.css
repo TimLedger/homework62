@@ -1,0 +1,23 @@
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-item button {
+  background-color: #dc3545;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}  
+
+.order-item button:hover{
+  background-color: #b02b39;
+}

@@ -18,9 +18,9 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/project1" element={<Project1 />} />
-          <Route path="/projects/project2" element={<Project2 />} />
-          <Route path="/projects/project3" element={<Project3 />} />
+          <Route path="/projects/burger" element={<Project1 />} />
+          <Route path="/projects/react-chat" element={<Project2 />} />
+          <Route path="/projects/global-insight" element={<Project3 />} />
           <Route path="*" element={<NotFound />} /> 
         </Routes>
     </Router>

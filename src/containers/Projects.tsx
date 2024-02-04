@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaHamburger, FaRegListAlt, FaRegMap } from "react-icons/fa";
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
@@ -11,11 +12,13 @@ const Projects: React.FC = () => {
     <div>
       <Header />
       <div className="container">
-        <ul>
-          <li><Link to="/projects/project1">Project 1</Link></li>
-          <li><Link to="/projects/project2">Project 2</Link></li>
-          <li><Link to="/projects/project3">Project 3</Link></li>
-        </ul>
+        <div className="projects-body">
+          <ul className='projects-cards'>
+            <li><Link className='projects-card' to="/projects/burger"><div className='projects-icon'><FaHamburger /></div> <span>Burger</span></Link></li>
+            <li><Link className='projects-card' to="/projects/react-chat"><div className='projects-icon'><FaRegListAlt /></div> <span>React Chat</span></Link></li>
+            <li><Link className='projects-card' to="/projects/global-insight"><div className='projects-icon'><FaRegMap /></div> <span>Global Insight</span></Link></li>
+          </ul>
+        </div>
       </div>
       <Footer />
     </div>
