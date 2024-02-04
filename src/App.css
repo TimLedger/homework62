@@ -11,21 +11,29 @@ h2{
 .not-found{
   background-color: #fff;
   margin: 0;
-  padding: 0;
-  display: flex;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%); 
+  grid-template-rows: repeat(3, 30%);
+  gap: 15px;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
+  justify-content: space-evenly;
 }
 
 .not-found-frame {
+  padding: 15px;
+  text-align: justify;
+}
+
+.not-found-404{
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  padding: 40px;
-  max-width: 400px;
-  width: 100%;
+  text-align: center;
+}
+
+.not-found-frame p{
+  color: #000;
 }
 
 .not-found-title {
@@ -54,6 +62,26 @@ h2{
   color: black;
   letter-spacing: 5px;
   transition: 0.3s;
+}
+
+.home-body{
+  min-height: 70vh;
+}
+
+.hero-block{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-block h1{
+  font-size: 60px;
+}
+
+.hero-block p{
+  font-size: 30px;
 }
 
 .about-body{
